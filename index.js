@@ -1,11 +1,11 @@
 new Vue({
 	el: '#app',
   data: {
-  	title: "Hellow World"
+  	counter: 0
   },
   methods: {
-  	changeTitle: function(event) {
-    	this.title = event.target.value;
+  	increase: function(event) {
+    	this.counter++;
     }
   }
 });
