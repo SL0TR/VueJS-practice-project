@@ -7,12 +7,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="./vue.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" type="image/gif" sizes="16x16">
     </head>
     <body>
         <div id="app">
-            <button v-on:click="increase">Click Me</button>
-            <p>{{ counter }}</p>
-          </div>
+            <button v-on:click="increase">Increase</button>
+            <p>{{ everChangingP }}</p>
+            <button v-on:click="reset">Reset</button>
+        </div>
     <script src="./index.js"></script>
     </body>
 </html>

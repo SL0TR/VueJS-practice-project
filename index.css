@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+p {
+    font-size: 10em;
+    font-weight: bold;
+}
+
+button {
+    background: aqua;
+    border: none;
+    padding: 1.5em;
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+button:first-child:active {
+    box-shadow: 1px 1px 15px 1px gray;
+}
+
+
+button:focus {
+    outline: none;
+}
