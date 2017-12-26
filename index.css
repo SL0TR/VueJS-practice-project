@@ -26,10 +26,11 @@ button {
     padding: 1.5em;
     border-radius: .3em;
     cursor: pointer;
+    box-shadow: 1px 1px 15px 1px gray;
 }
 
-button:first-child:active {
-    box-shadow: 1px 1px 15px 1px gray;
+button:active {
+    box-shadow: 1px 1px 10px 1px gray;
 }
 
 
