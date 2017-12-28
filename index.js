@@ -1,15 +1,19 @@
 new Vue({
 	el: '#app',
   data: {
-  	everChangingP: 0
+    counter: 0,
+    x: 0,
+    y: 0
   },
   methods: {
-  	increase: function(event) {
-      this.everChangingP += 10;      
+  	increase: function(step) {
+      this.counter += step;      
     },
-    reset: function(event) {
-      this.everChangingP = 0;
+    updateCo: function(event) {
+      this.x = event.clientX;
+      this.y = event.clientY;
     }
+
   }
 
 });

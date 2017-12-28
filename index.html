@@ -12,9 +12,9 @@
     </head>
     <body>
         <div id="app">
-            <button v-on:click="increase">Increase</button>
-            <p>{{ everChangingP }}</p>
-            <button v-on:click="reset">Reset</button>
+            <button v-on:click="increase(2)">Increase</button>
+            <p>{{ counter }}</p>
+            <p v-on:mousemove="updateCo">Co-ordinates: {{ x }} / {{ y }}</p>
         </div>
     <script src="./index.js"></script>
     </body>
