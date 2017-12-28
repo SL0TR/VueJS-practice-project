@@ -1,18 +1,15 @@
 new Vue({
 	el: '#app',
   data: {
-    counter: 0,
-    secondCounter: 0
+    attachRed: false,
+    color: 'green'
   },
   computed: {
-    output: function() {
-      return this.counter > 5 ? "Greater 5" : "Smaller 5";
-    }
-  },
-  methods: {
-    result: function() {
-      return this.counter > 5 ? "Greater 5" : "Smaller 5";
+    divClasses: function(){
+      return {
+        red: this.attachRed,
+        blue: !this.attachRed
+      }
     }
   }
-
 });
