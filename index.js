@@ -1,19 +1,13 @@
 new Vue({
 	el: '#app',
   data: {
-    counter: 0,
-    x: 0,
-    y: 0
+    counter: 0
   },
   methods: {
-  	increase: function(step) {
-      this.counter += step;      
-    },
-    updateCo: function(event) {
-      this.x = event.clientX;
-      this.y = event.clientY;
+    increase: function(){
+      this.counter++;
+      this.result = this.counter > 5 ? "Greater 5" : "Smaller 5"
     }
-
   }
 
 });
