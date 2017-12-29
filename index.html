@@ -12,14 +12,9 @@
     </head>
     <body>
         <div id="app">
-            <div class="demo"
-                @click="attachRed = !attachRed"
-                :class="divClasses"
-                ></div>
-            <div class="demo" :class="{red: attachRed}"></div>
-            <div class="demo" :class="color"></div>
-            <hr>
-            <input type="text" v-model="color">
+            <ul>
+                <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+            </ul>            
         </div>
     <script src="./index.js"></script>
     </body>

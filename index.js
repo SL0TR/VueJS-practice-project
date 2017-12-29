@@ -1,15 +1,11 @@
 new Vue({
-	el: '#app',
+  el: '#app',
   data: {
-    attachRed: false,
-    color: 'green'
-  },
-  computed: {
-    divClasses: function(){
-      return {
-        red: this.attachRed,
-        blue: !this.attachRed
-      }
-    }
+    ingredients: ['meat', 'fruit', 'cookies'],
+    persons: [
+      {name: 'Max', age: 27, color: 'red'},
+      {name: 'Ana', age: 'unknown', color: 'blue'}
+    ]
   }
+
 });

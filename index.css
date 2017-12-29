@@ -6,22 +6,4 @@
     font-family: sans-serif;
 }
 
-.demo {
-    height: 10em;
-    width: 10em;
-    background: gray;
-    margin: 2em;
-    display: inline-block;
-}
-
-.green {
-    background: green;
-}
-
-.blue {
-    background: blue;
-}
-
-.red {
-    background: red;
-}
+   
