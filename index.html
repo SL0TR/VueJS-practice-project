@@ -12,18 +12,9 @@
     </head>
     <body>
         <div id="app">
-            <ul>
-                <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
-            </ul>
-            <br>
-            <hr>
-            <br>
-            <ul>
-                <li v-for="person in persons">
-                    <div v-for="(value, key) in person">{{ key }}: {{ value }}</div>
-                </li>
-                
-            </ul>            
+            <h1>{{ title }}</h1> 
+            <button @click="title = 'Changed'">Update Title</button>
+            <button @click="destroy">Destroy</button> 
         </div>
     <script src="./index.js"></script>
     </body>
